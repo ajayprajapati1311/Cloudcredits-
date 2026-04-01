@@ -8,6 +8,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    defaults:
+      run:
+        working-directory: app   # ✅ THIS IS THE FIX
+
     steps:
 
     - name: Checkout Code
@@ -23,3 +27,6 @@ jobs:
 
     - name: Run Tests
       run: npm test
+
+    - name: Build Docker Image
+      run: docker build -t devops-app .
