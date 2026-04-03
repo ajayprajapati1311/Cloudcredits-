@@ -1,0 +1,8 @@
+output "ec2_public_ip" {
+  description = "Public IP of EC2 instance"
+  value       = aws_instance.cloudcredits_server.public_ip
+}
+
+output "instance_id" {
+  value = aws_instance.cloudcredits_server.id
+}

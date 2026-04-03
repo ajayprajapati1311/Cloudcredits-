@@ -6,3 +6,13 @@ npm-debug.log*
 
 # Environment variables
 .env
+#Terraform
+.terraform/ 
+.tfstate
+.tfstate.backup
+
+#Sensible files
+*.pem
+
+#OS
+.DS_Store
